@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables Practices</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Company</th>
+      </tr>
+      <tr>
+        <td>Rohit</td>
+        <td>Frontend Developer</td>
+      </tr>
+      <tr>
+        <td>Nyesha</td>
+        <td>Backend Developer</td>
+      </tr>
+      <tr>
+        <td>Sam</td>
+        <td>System Engineer</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- table 2 -->
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>20</td>
+          <td>$1.00</td>
+        </tr>
+
+        <tr>
+          <td>Orange</td>
+          <td>15</td>
+          <td>$3.50</td>
+        </tr>
+
+        <tr>
+          <td>Guava</td>
+          <td>6</td>
+          <td>$1.80</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>41</td>
+          <td>$6.30</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+    <!-- table 3 -- Using colspan-->
+
+    <table border="3">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Contact Info</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Jhon Doe</td>
+          <td>1234567890</td>
+          <td>Jhon@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>Cooper</td>
+          <td>894561237</td>
+          <td>Cooper@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>Mohan</td>
+          <td>7894561230</td>
+          <td>Mohan@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <!-- table 4 using col span and row span -->
+
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Column1</th>
+          <th>Column2</th>
+          <th>Column3</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Row 1 Cell 1</td>
+          <td>Row 1 Cell 2</td>
+          <td>Row 1 Cell 3</td>
+        </tr>
+
+        <tr>
+          <td>Row 2 Cell 2</td>
+          <td>Row 2 Cell 3</td>
+        </tr>
+
+        <tr>
+          <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- table 5 -->
+
+
+
+    <table border="2">
+
+      <thead>
+        <tr>
+        <th>Level 1</th>
+        <th>Level 2</th>
+        <th>Level 3</th>
+        <th>Level 4</th>
+        <th>Level 5</th>
+      </tr>
+      </thead>
+      
+
+      <tbody>
+        <tr>
+        <td rowspan="6">System</td>
+        <td rowspan="4">System Apps</td>
+        <td rowspan="3">System Env</td>
+        <td>App Test</td>
+        <td rowspan="2">Foo</td>
+      </tr>
+
+
+      <tr>
+        <td>App memory</td>
+      </tr>
+
+      <tr>
+              <td>App test</td>
+              <td rowspan="2">xxxxxxxxx</td>
+            </tr>
+      <tr>
+        <td>System env2</td>
+        <td>App memory</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2"">System memory</td>
+        <td>Memory Fund</td>
+        <td colspan="2" rowspan="2">something</td>
+      </tr>
+
+      <tr>
+        <td>Apes Tea</td>
+        <!-- <td>idk</td> -->
+      </tr>
+      </tbody>
+      
+
+    </table>
+  </body>
+</html>
